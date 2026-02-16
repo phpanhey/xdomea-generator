@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ns2:FVDaten.SGOAblegen.0605 xmlns:ns2="urn:xoev-de:xdomea:schema:3.0.0"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="urn:xoev-de:xdomea:xdomea-0605.xsd">
+    <ns2:Kopf>
+        <ns2:ProzessID>{{PROZESS_ID}}</ns2:ProzessID>
+        <ns2:Nachrichtentyp>
+            <code>0605</code>
+        </ns2:Nachrichtentyp>
+        <ns2:Erstellungszeitpunkt>${ERSTELLUNGS_ZEITPUNKT}</ns2:Erstellungszeitpunkt>
+        <ns2:Absender/>
+        <ns2:Empfaenger>
+            <ns2:Taetigkeit>${TAETIGKEIT}</ns2:Taetigkeit>
+        </ns2:Empfaenger>
+        <ns2:Empfangsbestaetigung>${EMPFANGS_BESTAETIGUNG}</ns2:Empfangsbestaetigung>
+        <ns2:Importbestaetigung>${IMPORT_BESTAETIGUNG}</ns2:Importbestaetigung>
+        <ns2:Erstellerkennung>${ERSTELLER_KENNUNG}</ns2:Erstellerkennung>
+        <ns2:ErstellerRolle>${ERSTELLER_ROLLE}</ns2:ErstellerRolle>
+        <ns2:Stapel>true</ns2:Stapel>
+    </ns2:Kopf>
+    <ns2:SchriftgutobjektZumAblegen>
+        <ns2:FachverfahrenObjektID>${FACHVERFAHREN_OBJEKT_ID}</ns2:FachverfahrenObjektID>
+        <ns2:Schriftgutobjekt>

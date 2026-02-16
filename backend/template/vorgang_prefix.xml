@@ -1,0 +1,10 @@
+<ns2:Vorgang>
+                        <ns2:Identifikation>
+                            <ns2:ID>${VORGANG_ID}</ns2:ID>
+                        </ns2:Identifikation>
+                        <ns2:AllgemeineMetadaten>
+                            <ns2:Betreff>${VORGANG}</ns2:Betreff>
+                            <ns2:Medium>
+                                <code>001</code>
+                            </ns2:Medium>
+                        </ns2:AllgemeineMetadaten>

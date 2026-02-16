@@ -1,0 +1,30 @@
+<ns2:Dokument>
+    <ns2:Identifikation>
+        <ns2:ID>${DOCUMENT_ID}</ns2:ID>
+    </ns2:Identifikation>
+    <ns2:AllgemeineMetadaten>
+        <ns2:Betreff>${DOCUMENT_NAME}</ns2:Betreff>
+        <ns2:Medium>
+            <code>001</code>
+        </ns2:Medium>
+  </ns2:AllgemeineMetadaten>
+    <ns2:Anlage>
+        <ns2:Identifikation>
+            <ns2:ID>${ATTACHMENT_ID}</ns2:ID>
+        </ns2:Identifikation>
+        <ns2:Version>
+            <ns2:Nummer>1.0</ns2:Nummer>
+            <ns2:Format>
+                <ns2:Name listURI="urn:xoev-de:xdomea:codeliste:dateiformat"
+                                                          listVersionID="1.0">
+                    <code>100</code>
+                </ns2:Name>
+                <ns2:SonstigerName>${ATTACHMENT_EXTENSION}</ns2:SonstigerName>
+                <ns2:Version>1.0</ns2:Version>
+                <ns2:Primaerdokument>
+                    <ns2:Dateiname>${ATTACHMENT_FILENAME}</ns2:Dateiname>
+                </ns2:Primaerdokument>
+            </ns2:Format>
+        </ns2:Version>
+    </ns2:Anlage>
+</ns2:Dokument>

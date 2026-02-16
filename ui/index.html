@@ -96,7 +96,6 @@ function sendJsonToEndpoint(){
 async function sendDataToServer(jsonData) {
 
 
-  console.log(jsonData);
   try {
     const response = await fetch("http://localhost:8080/generatexdomea", {
       method: "POST",

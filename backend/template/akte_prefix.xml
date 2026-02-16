@@ -1,0 +1,19 @@
+<ns2:Akte>
+                <ns2:Identifikation>
+                    <ns2:ID>${AKTE_ID}</ns2:ID>
+                </ns2:Identifikation>
+                <ns2:AllgemeineMetadaten>
+                    <ns2:Betreff>${AKTE_BETREFF}</ns2:Betreff>                    
+                    <ns2:Federfuehrung>${AKTE_FERDERFUEHRUNG}</ns2:Federfuehrung>
+                    <ns2:Aktenfuehrung>${AKTE_AKTENFUEHRUNG}</ns2:Aktenfuehrung>
+                    <ns2:Bemerkung>${AKTE_BEMERKUNG}</ns2:Bemerkung>
+                    <ns2:Medium>
+                        <code>001</code>
+                    </ns2:Medium>
+                    <ns2:Aktenplaneinheit>
+                        <ns2:Kennzeichen>${APL_KEY}</ns2:Kennzeichen>
+                        <ns2:Inhaltsangabe>${APL_KEY}</ns2:Inhaltsangabe>
+                        <ns2:BetreffKurz>${APL_KEY}</ns2:BetreffKurz>
+                    </ns2:Aktenplaneinheit>
+                </ns2:AllgemeineMetadaten>
+                <ns2:Akteninhalt>
