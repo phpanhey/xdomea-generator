@@ -29,7 +29,6 @@
   .vorgang { background: #e8f5e9; }
   .untervorgang { background: #fff3e0; }
   .dokument { background: #fce4ec; }
-
   .ghost { opacity: 0.4; }
 </style>
 </head>
@@ -43,9 +42,15 @@
 <button onclick="addItem('dokument')">+ Dokument</button>
 
 <ul id="root"></ul>
-
 <button onclick="sendJsonToEndpoint()">Start Generator</button>
 
+<hr>
+<textarea id="xdomea" name="xdomea" rows="10" cols="60">
+      This is where the xdomea will be generated...
+</textarea>
+
+<hr>
+<button onclick="copyText()">Copy</button>
 <script>
 let counters = {
   akte: 1,
@@ -94,8 +99,6 @@ function sendJsonToEndpoint(){
 
 
 async function sendDataToServer(jsonData) {
-
-
   try {
     const response = await fetch("http://localhost:8080/generatexdomea", {
       method: "POST",
@@ -112,7 +115,7 @@ async function sendDataToServer(jsonData) {
     // Assuming your server returns XML as a string
     const result = await response.text();
     console.log("Server response:", result);
-    alert(result);
+    document.getElementById("xdomea").value = result;
     return result;
   } catch (err) {
     console.error("Error sending data:", err);
@@ -141,7 +144,14 @@ function generateJson() {
   return parseList(document.getElementById('root'));
 }
 
-</script>
+function copyText() {
+    const textarea = document.getElementById("xdomea");
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+    document.execCommand("copy");
+    alert("xdomea copied to clipboard");
+  }
 
+</script>
 </body>
 </html>
