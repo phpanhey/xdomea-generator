@@ -3,7 +3,7 @@
                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                              xsi:schemaLocation="urn:xoev-de:xdomea:xdomea-0605.xsd">
     <ns2:Kopf>
-        <ns2:ProzessID>{{PROZESS_ID}}</ns2:ProzessID>
+        <ns2:ProzessID>${{PROZESS_ID}}</ns2:ProzessID>
         <ns2:Nachrichtentyp>
             <code>0605</code>
         </ns2:Nachrichtentyp>
